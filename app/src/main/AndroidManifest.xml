@@ -21,11 +21,20 @@
         <activity
             android:name=".MainActivity"
             tools:ignore="DuplicateActivity" />
-        <activity android:name=".ChooseCampus" />
         <activity android:name=".Registration" />
         <activity
             android:name=".ChooseEatery"
             android:label="@string/title_activity_choose_eatery"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".ChooseCampus"
+            android:label="@string/title_activity_choose_campus"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DowntownGrounds"
+            android:label="@string/title_activity_downtown_grounds"
             android:theme="@style/AppTheme"></activity>
     </application>
 

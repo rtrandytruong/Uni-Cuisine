@@ -1,8 +1,8 @@
 package com.example.bennymai.affiliatednonafilliatedscreen;
 
-import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class ChooseEatery extends AppCompatActivity {
+public class DowntownGrounds extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class ChooseEatery extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_eatery);
+        setContentView(R.layout.activity_downtown_grounds);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,14 +56,13 @@ public class ChooseEatery extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_choose_eatery, menu);
+        getMenuInflater().inflate(R.menu.menu_downtown_grounds, menu);
         return true;
     }
 
@@ -131,14 +130,14 @@ public class ChooseEatery extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    Urban urban = new Urban();
-                    return urban;
+                    DGBreakfast dgbreakfast = new DGBreakfast();
+                    return dgbreakfast;
                 case 1:
-                    Northside northside = new Northside();
-                    return northside;
+                    DGLunch dglunch = new DGLunch();
+                    return dglunch;
                 case 2:
-                    Hans hans = new Hans();
-                    return hans;
+                    DGDinner dgdinner = new DGDinner();
+                    return dgdinner;
             }
             return null;
         }
@@ -150,3 +149,4 @@ public class ChooseEatery extends AppCompatActivity {
         }
     }
 }
+

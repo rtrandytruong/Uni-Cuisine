@@ -15,18 +15,18 @@ import android.widget.ListView;
  * Created by Guai on 4/19/18.
  */
 
-public class Hans extends Fragment {
+public class Campus extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.hans, container, false);
+        View view = inflater.inflate(R.layout.choosecampus, container, false);
 
-        String[] hans = {"BUFFET"};
+        String[] campuses = {"Drexel University", "UPenn", "Temple", "Penn State"};
 
-        ListView listView = (ListView) view.findViewById(R.id.hanslist);
+        ListView listView = (ListView) view.findViewById(R.id.campuslist);
 
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, hans);
+        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, campuses);
 
         listView.setAdapter(listViewAdapter);
 
@@ -41,5 +41,6 @@ public class Hans extends Fragment {
         });
 
         return view;
+
     }
 }

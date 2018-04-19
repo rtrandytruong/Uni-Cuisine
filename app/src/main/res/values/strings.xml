@@ -14,4 +14,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_choose_campus">ChooseCampus</string>
+    <string name="title_activity_chic_fil">ChicFilA</string>
+    <string name="title_activity_downtown_grounds">DowntownGrounds</string>
 </resources>
