@@ -56,12 +56,23 @@
         <TextView
             android:id="@+id/textViewSignup"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="36dp"
             android:text="Don't have account? Sign Up"
             android:textAlignment="center" />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
 </RelativeLayout>
+
 
 <!--
 <?xml version="1.0" encoding="utf-8"?>

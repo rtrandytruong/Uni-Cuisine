@@ -35,7 +35,8 @@
         <activity
             android:name=".DowntownGrounds"
             android:label="@string/title_activity_downtown_grounds"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>
