@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +26,9 @@ public class Signup extends AppCompatActivity implements View.OnClickListener{
     ProgressBar progressBar;
     EditText editTextEmail, editTextPassword;
     TextView Login;
+
+    Spinner pickcampus;
+    String ChooseCampus[] = {"Drexel University", "UPENN", "Temple", "Penn State"};
 
     private FirebaseAuth mAuth;
 
@@ -41,6 +47,23 @@ public class Signup extends AppCompatActivity implements View.OnClickListener{
 
         findViewById(R.id.buttonSignUp).setOnClickListener(this);
         findViewById(R.id.textViewLogin).setOnClickListener(this);
+
+        pickcampus = (Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, ChooseCampus);
+        pickcampus.setAdapter(arrayAdapter);
+
+        pickcampus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(),"Your campus is " + ChooseCampus[i],Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
     private void registerUser() {
