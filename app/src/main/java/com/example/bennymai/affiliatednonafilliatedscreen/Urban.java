@@ -38,7 +38,7 @@ public class Urban extends Fragment {
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 1) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), GreenSt.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 2) {

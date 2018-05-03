@@ -19,5 +19,26 @@
     <string name="title_activity_downtown_grounds">DowntownGrounds</string>
 
     <string name="DripCoffee">
-        12 oz. - $1.85 (22 Calories)\n16 oz. - $2.10 (30 Calories)\n20 oz. - $2.40 (40 Calories)</string>
+        12 oz. - $1.85 (22 Calories)\n16 oz. - $2.10 (30 Calories)\n20 oz. - $2.45 (40 Calories)</string>
+    <string name="Cappuccino">
+        12 oz. - $3.15 (98 Calories)\n16 oz. - $3.75 (130 Calories)\n20 oz. - $4.15 (163 Calories)</string>
+    <string name="Mokkaccino">
+        12 oz. - $3.65 (285 Calories)\n16 oz. - $4.25 (380 Calories)\n20 oz. - $4.55 (475 Calories)</string>
+    <string name="Latte">
+        12 oz. - $3.15 (188 Calories)\n16 oz. - $3.75 (250 Calories)\n20 oz. - $4.15 (313 Calories)</string>
+    <string name="HotChocolate">
+        12 oz. - $1.85 (383 Calories)\n16 oz. - $2.10 (510 Calories)\n20 oz. - $2.45 (638 Calories)</string>
+    <string name="SumatraIcedCoffee">
+        16 oz. - $2.20 (30 Calories)\n20 oz. - $2.55 (40 Calories)</string>
+    <string name="IcedTea">
+        16 oz. - $2.20 (0 Calories)\n20 oz. - $2.55 (0 Calories)</string>
+    <string name="HotTazoTea">
+        12 oz. - $1.85 (0 Calories)\n16 oz. - $2.10 (0 Calories)</string>
+    <string name="title_activity_green_st">GreenSt</string>
+    <string name="VietnameseBunChaPorkSald">
+        Small - $6.29 (151 Calories)\nLarge - $8.59 (302 Calories)\nWrap - $6.29 (451 Calories)</string>
+    <string name="SouthwestChickenSalad">
+        Small - $6.29 (220 Calories)\nLarge - $8.59 (400 Calories)\nWrap - $6.29 (520 Calories)</string>
+    <string name="MediterraneanGrainBowl">
+        Small - $6.29 (410 Calories)\nLarge - $8.59 (820 Calories)\nWrap - $6.29 (710 Calories)</string>
 </resources>

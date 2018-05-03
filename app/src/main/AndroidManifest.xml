@@ -7,7 +7,7 @@
         android:largeScreens="true"
         android:normalScreens="true"
         android:smallScreens="true"
-        android:xlargeScreens="true"/>
+        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
@@ -57,6 +57,34 @@
         <activity
             android:name=".DG_DripCoffee"
             android:screenOrientation="portrait" />
+        <activity android:name=".test" />
+        <activity android:name=".DG_Expresso" />
+        <activity android:name=".DG_Cappuccino" />
+        <activity android:name=".DG_Mokaccino" />
+        <activity android:name=".DG_Latte" />
+        <activity android:name=".DG_Americano" />
+        <activity android:name=".DG_HotChocolate" />
+        <activity android:name=".DG_SumatraIcedTea" />
+        <activity android:name=".DG_IcedTea" />
+        <activity android:name=".DG_HotTazoTea" />
+        <activity android:name=".DG_Bagel" />
+        <activity android:name=".DG_BagelwithSpread" />
+        <activity android:name=".DG_LoxBagel" />
+        <activity android:name=".DG_Muffin" />
+        <activity android:name=".DG_Scone" />
+        <activity android:name=".DG_CoffeeRoll" />
+        <activity android:name=".DG_Danish" />
+        <activity android:name=".DG_Brownie" />
+        <activity android:name=".DG_PoundCake" />
+        <activity android:name=".DG_Croissant" />
+        <activity
+            android:name=".GreenSt"
+            android:label="@string/title_activity_green_st"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".GSMenu" />
+        <activity android:name=".GS_Vietnamese" />
+        <activity android:name=".GS_Southwest" />
+        <activity android:name=".GS_Mediterranean"></activity>
     </application>
 
 </manifest>

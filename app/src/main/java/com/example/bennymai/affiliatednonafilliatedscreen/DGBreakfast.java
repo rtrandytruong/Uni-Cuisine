@@ -22,7 +22,7 @@ public class DGBreakfast extends Fragment {
 
         View view = inflater.inflate(R.layout.dgbreakfast, container, false);
 
-        String[] breakfast = {"Drip Coffee", "Espresso", "Cappuccino", "Mokaccino", "Latte", "Americano", "Hot Chocolate", "Sumatra Ice Coffee", "Iced Tea", "Hot Tazo Tea", "Bagel", "Bagel with Spread", "Box & Bagel", "Muffin", "Scone", "Coffee Roll", "Danish", "Brownie", "Pound Cake", "Croissant"};
+        String[] breakfast = {"Drip Coffee", "Espresso", "Cappuccino", "Mokaccino", "Latte", "Americano", "Hot Chocolate", "Sumatra Ice Coffee", "Iced Tea", "Hot Tazo Tea", "Bagel", "Bagel with Spread", "Lox & Bagel", "Muffin", "Scone", "Coffee Roll", "Danish", "Brownie", "Pound Cake", "Croissant"};
 
         ListView listView = (ListView) view.findViewById(R.id.dgbreakfastlist);
 
@@ -59,27 +59,79 @@ public class DGBreakfast extends Fragment {
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 1) {
-                    Intent myintent = new Intent(getContext(), DG_DripCoffee.class);
+                    Intent myintent = new Intent(getContext(), DG_Expresso.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 2) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), DG_Cappuccino.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 3) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), DG_Mokaccino.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 4) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), DG_Latte.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 5) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), DG_Americano.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 6) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), DG_HotChocolate.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 7) {
+                    Intent myintent = new Intent(getContext(), DG_SumatraIcedTea.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 8) {
+                    Intent myintent = new Intent(getContext(), DG_IcedTea.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 9) {
+                    Intent myintent = new Intent(getContext(), DG_HotTazoTea.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 10) {
+                    Intent myintent = new Intent(getContext(), DG_Bagel.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 11) {
+                    Intent myintent = new Intent(getContext(), DG_BagelwithSpread.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 12) {
+                    Intent myintent = new Intent(getContext(), DG_LoxBagel.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 13) {
+                    Intent myintent = new Intent(getContext(), DG_Muffin.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 14) {
+                    Intent myintent = new Intent(getContext(), DG_Scone.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 15) {
+                    Intent myintent = new Intent(getContext(), DG_CoffeeRoll.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 16) {
+                    Intent myintent = new Intent(getContext(), DG_Danish.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 17) {
+                    Intent myintent = new Intent(getContext(), DG_Brownie.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 18) {
+                    Intent myintent = new Intent(getContext(), DG_PoundCake.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 19) {
+                    Intent myintent = new Intent(getContext(), DG_Croissant.class);
                     startActivityForResult(myintent, 0);
                 }
             }
