@@ -1,5 +1,6 @@
 package com.example.bennymai.affiliatednonafilliatedscreen;
 
+import android.app.Dialog;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;

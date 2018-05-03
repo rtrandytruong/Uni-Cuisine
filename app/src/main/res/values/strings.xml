@@ -17,4 +17,7 @@
     <string name="title_activity_choose_campus">ChooseCampus</string>
     <string name="title_activity_chic_fil">ChicFilA</string>
     <string name="title_activity_downtown_grounds">DowntownGrounds</string>
+
+    <string name="DripCoffee">
+        12 oz. - $1.85 (22 Calories)\n16 oz. - $2.10 (30 Calories)\n20 oz. - $2.40 (40 Calories)</string>
 </resources>

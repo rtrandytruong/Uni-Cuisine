@@ -22,7 +22,7 @@ public class DGBreakfast extends Fragment {
 
         View view = inflater.inflate(R.layout.dgbreakfast, container, false);
 
-        String[] breakfast = {"breakfast", "breakfast", "breakfast", "breakfast"};
+        String[] breakfast = {"Drip Coffee", "Espresso", "Cappuccino", "Mokaccino", "Latte", "Americano", "Hot Chocolate", "Sumatra Ice Coffee", "Iced Tea", "Hot Tazo Tea", "Bagel", "Bagel with Spread", "Box & Bagel", "Muffin", "Scone", "Coffee Roll", "Danish", "Brownie", "Pound Cake", "Croissant"};
 
         ListView listView = (ListView) view.findViewById(R.id.dgbreakfastlist);
 
@@ -39,6 +39,13 @@ public class DGBreakfast extends Fragment {
 //                }
 //            }
 //        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                    Intent myintent = new Intent(getContext(), DG_DripCoffee.class);
+                    startActivityForResult(myintent, 0);
+            }
+        });
 
         return view;
 
