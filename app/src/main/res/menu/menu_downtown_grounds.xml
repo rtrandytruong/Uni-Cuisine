@@ -2,18 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.bennymai.affiliatednonafilliatedscreen.DowntownGrounds">
-    <!--<item-->
-        <!--android:id="@+id/action_profile"-->
-        <!--android:orderInCategory="100"-->
-        <!--android:title="Profile"-->
-        <!--android:icon="@drawable/profile"-->
-        <!--app:showAsAction="always" />-->
-
-
-    <!--<item-->
-        <!--android:id="@+id/action_search"-->
-        <!--android:orderInCategory="100"-->
-        <!--android:title="Search"-->
-        <!--android:icon="@drawable/search"-->
-        <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/dgranking"
+        android:orderInCategory="100"
+        android:title="Profile"
+        android:icon="@drawable/ranking"
+        app:showAsAction="always" />
 </menu>

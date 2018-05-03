@@ -39,7 +39,7 @@ public class DGBreakfast extends Fragment {
 //                }
 //            }
 //        });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                     Intent myintent = new Intent(getContext(), DG_DripCoffee.class);
@@ -49,5 +49,41 @@ public class DGBreakfast extends Fragment {
 
         return view;
 
+    }
+}*/
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                if (position == 0) {
+                    Intent myintent = new Intent(getContext(), DG_DripCoffee.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 1) {
+                    Intent myintent = new Intent(getContext(), DG_DripCoffee.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 2) {
+                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 3) {
+                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 4) {
+                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 5) {
+                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 6) {
+                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    startActivityForResult(myintent, 0);
+                }
+            }
+        });
+        return view;
     }
 }
