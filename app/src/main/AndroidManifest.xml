@@ -84,7 +84,60 @@
         <activity android:name=".GSMenu" />
         <activity android:name=".GS_Vietnamese" />
         <activity android:name=".GS_Southwest" />
-        <activity android:name=".GS_Mediterranean"></activity>
+        <activity android:name=".GS_Mediterranean" />
+        <activity
+            android:name=".FoodTrucks"
+            android:label="@string/title_activity_food_trucks"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FoodTruckList" />
+        <activity
+            android:name=".HJFoodTruck"
+            android:label="@string/title_activity_hjfood_truck"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HJMenu"
+            android:label="@string/title_activity_hjmenu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HalalFoodTruck"
+            android:label="@string/title_activity_halal_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".HalalMenu" />
+        <activity
+            android:name=".MaiFoodTruck"
+            android:label="@string/title_activity_mai_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".JimmyFoodTruck"
+            android:label="@string/title_activity_jimmy_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".JimmyMenu" />
+        <activity
+            android:name=".KimFoodTruck"
+            android:label="@string/title_activity_kim_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Halal_ChickenOverRice" />
+        <activity android:name=".Halal_Lamboverrice" />
+        <activity android:name=".Halal_Combooverrice" />
+        <activity android:name=".Halal_LambOverRice" />
+        <activity android:name=".Halal_ComboOverRice" />
+        <activity android:name=".Halal_FishOverRice" />
+        <activity android:name=".Halal_FalafelRice" />
+        <activity android:name=".HJ_PhillyCheesesteak" />
+        <activity android:name=".HJ_PhillyChickenCheesesteak" />
+        <activity android:name=".HJ_BbqCheesesteak" />
+        <activity android:name=".HJ_MushroomCheesesteak" />
+        <activity android:name=".HJ_PepperCheesesteak" />
+        <activity android:name=".Mai_EggRoll" />
+        <activity android:name=".Mai_WontonSoup" />
+        <activity android:name=".Mai_TofuVegetableSoup" />
+        <activity android:name=".Mai_ChickenNoodleSoup" />
+        <activity android:name=".Mai_ChickenRiceSoup" />
+        <activity android:name=".Kim_GeneralTsosChicken" />
+        <activity android:name=".Kim_PepperSteak" />
+        <activity android:name=".Kim_SesameChicken" />
+        <activity android:name=".Kim_FriedDumplings" />
+        <activity android:name=".Kim_FriedFishWithGarlicSauce"></activity>
     </application>
 
 </manifest>

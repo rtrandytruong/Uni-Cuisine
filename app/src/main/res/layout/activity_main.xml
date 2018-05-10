@@ -9,32 +9,44 @@
 
     <Button
         android:id="@+id/eateries"
-        android:layout_width="163dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="230dp"
+        android:background="@drawable/buttonstyle"
         android:text="Campus Eateries"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/buttonstyle"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/foodtruck"
-        android:layout_width="166dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="230dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/buttonstyle"
         android:text="Food Trucks"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eateries"
-        android:background="@drawable/buttonstyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/eateries" />
+
+    <Button
+        android:id="@+id/randomfood"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Help Me Pick a Food"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodtruck" />
 
 </android.support.constraint.ConstraintLayout>

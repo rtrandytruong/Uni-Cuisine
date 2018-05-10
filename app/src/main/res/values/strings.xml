@@ -18,6 +18,15 @@
     <string name="title_activity_chic_fil">ChicFilA</string>
     <string name="title_activity_downtown_grounds">DowntownGrounds</string>
 
+    <string name="WontonSoup">
+        Small - $2.00\nLarge - $4.00</string>
+    <string name="TofuVegetableSoup">
+        Small - $1.75\nLarge - $3.50</string>
+    <string name="ChichkenNoodleSoup">
+        Small - $1.75\nLarge - $3.50</string>
+    <string name="ChichkenRiceSoup">
+        Small - $1.75\nLarge - $3.50</string>
+
     <string name="DripCoffee">
         12 oz. - $1.85 (22 Calories)\n16 oz. - $2.10 (30 Calories)\n20 oz. - $2.45 (40 Calories)</string>
     <string name="Cappuccino">
@@ -41,4 +50,11 @@
         Small - $6.29 (220 Calories)\nLarge - $8.59 (400 Calories)\nWrap - $6.29 (520 Calories)</string>
     <string name="MediterraneanGrainBowl">
         Small - $6.29 (410 Calories)\nLarge - $8.59 (820 Calories)\nWrap - $6.29 (710 Calories)</string>
+    <string name="title_activity_food_trucks">FoodTrucks</string>
+    <string name="title_activity_hjfood_truck">HJFoodTruck</string>
+    <string name="title_activity_hjmenu">HJMenu</string>
+    <string name="title_activity_halal_food_truck">HalalFoodTruck</string>
+    <string name="title_activity_mai_food_truck">MaiFoodTruck</string>
+    <string name="title_activity_jimmy_food_truck">JimmyFoodTruck</string>
+    <string name="title_activity_kim_food_truck">KimFoodTruck</string>
 </resources>
