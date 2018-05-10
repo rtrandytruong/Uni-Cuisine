@@ -137,7 +137,8 @@
         <activity android:name=".Kim_PepperSteak" />
         <activity android:name=".Kim_SesameChicken" />
         <activity android:name=".Kim_FriedDumplings" />
-        <activity android:name=".Kim_FriedFishWithGarlicSauce"></activity>
+        <activity android:name=".Kim_FriedFishWithGarlicSauce" />
+        <activity android:name=".ResultScreen"></activity>
     </application>
 
 </manifest>
