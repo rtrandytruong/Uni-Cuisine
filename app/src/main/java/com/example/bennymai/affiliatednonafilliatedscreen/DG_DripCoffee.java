@@ -14,12 +14,23 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageButton;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.DatabaseError;
+
 import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class DG_DripCoffee extends AppCompatActivity implements View.OnClickListener {
     Dialog myDialog;
@@ -29,8 +40,9 @@ public class DG_DripCoffee extends AppCompatActivity implements View.OnClickList
     TextView total_Like;
     TextView total_Dislike;
 
-    public static int likes = 0;
+    public static int likes;
     public static int dislikes = 0;
+    private static final String TAG = "Testing: ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,37 +66,73 @@ public class DG_DripCoffee extends AppCompatActivity implements View.OnClickList
         myDialog.show();
     }
 
-
+    String temp_string = "";
     @Override
     public void onClick(View view) {
+
         Context context = this;
-        if (view == like_button) {
+        //T Code IMPORTANT FOR FIREBASE
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference myRef = database.getReference("coffee_like_counter");
 
-            //      writeToFile(String.valueOf(likes));
-            /*startActivity(new Intent(this, ResultScreen.class));*/
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String post = dataSnapshot.getValue(String.class);
+                Log.v(TAG, post); // log dont need this
 
-            if (likes == 0 && dislikes != 1) {
-                likes += 1;
+                int like_num = Integer.parseInt(post); //converting
+                likes = like_num + 1;
+                temp_string = String.valueOf(likes);
                 total_Like.setText(String.valueOf(likes));
-            } else if (likes == 1) {
-                likes = 0;
-                total_Like.setText(String.valueOf(likes));
-            }
-        }
-        else if (view == dislike_button) {
+                myRef.setValue(temp_string);
 
-            //      writeToFile(String.valueOf(dislikes));
-            /*startActivity(new Intent (this, ResultScreen.class));*/
-
-            if (dislikes == 0 && likes != 1) {
-                dislikes += 1;
-                total_Dislike.setText(String.valueOf(dislikes));
-            } else if (dislikes == 1) {
-                dislikes = 0;
-                total_Dislike.setText(String.valueOf(dislikes));
             }
-        }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+
+        });
+
+
+
+        // T CODE ENDS
+
+//        if (view == like_button) {
+//
+//            //      writeToFile(String.valueOf(likes));
+//            /*startActivity(new Intent(this, ResultScreen.class));*/
+//
+//            if (likes == 0 && dislikes != 1) {
+//                likes += 1;
+//               // myRef.setValue("0");
+//                total_Like.setText(String.valueOf(likes));
+//            } else if (likes == 1) {
+//                likes = 0;
+//                total_Like.setText(String.valueOf(likes));
+//            }
+//        }
+//        else if (view == dislike_button) {
+//
+//            //      writeToFile(String.valueOf(dislikes));
+//            /*startActivity(new Intent (this, ResultScreen.class));*/
+//
+//            if (dislikes == 0 && likes != 1) {
+//                dislikes += 1;
+//                total_Dislike.setText(String.valueOf(dislikes));
+//            } else if (dislikes == 1) {
+//                dislikes = 0;
+//                total_Dislike.setText(String.valueOf(dislikes));
+//            }
+//        }
     }
+
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference ref = database.getReference("coffee_like_counter");
+
+
 /*
     public void writeToFile(String data)
     {
