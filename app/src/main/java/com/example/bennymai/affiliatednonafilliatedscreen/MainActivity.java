@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == randomfood) {
             Random generator = new Random();
-            int number = generator.nextInt(20) + 1;
+            int number = generator.nextInt(32) + 1;
             // The '5' is the number of activities
 
             Class activity = null;
@@ -134,6 +134,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 20:
                     activity = Kim_GeneralTsosChicken.class;
                     break;
+                case 21:
+                    activity = Halal_FalafelSalad.class;
+                    break;
+                case 22:
+                    activity = Halal_LambGyro.class;
+                    break;
+                case 23:
+                    activity = Halal_LambSalad.class;
+                    break;
+                case 24:
+                    activity = Halal_ShishKebabRice.class;
+                    break;
+                case 25:
+                    activity = Halal_ChapliKebabRice.class;
+                    break;
+                case 26:
+                    activity = Halal_ChickenGyro.class;
+                    break;
+                case 27:
+                    activity = Kami_Bibimbap.class;
+                    break;
+                case 28:
+                    activity = Kami_Bulgogi.class;
+                    break;
+                case 29:
+                    activity = Kami_KimchiFriedRiceWrap.class;
+                    break;
+                case 30:
+                    activity = Kami_KimichiBulgogiHoagie.class;
+                    break;
+                case 31:
+                    activity = Kami_SpicyChicken.class;
+                    break;
+                case 32:
+                    activity = Kami_Tteokbokki.class;
+                    break;
+
             }
             // We use intents to start activities
             Intent intent = new Intent(getBaseContext(), activity);
