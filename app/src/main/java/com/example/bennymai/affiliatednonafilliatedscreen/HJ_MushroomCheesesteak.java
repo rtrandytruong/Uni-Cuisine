@@ -39,6 +39,7 @@ public class HJ_MushroomCheesesteak extends AppCompatActivity implements View.On
     private ImageButton like_button;
     private ImageButton dislike_button;
 
+    TextView HJ;
     TextView total_Like;
     TextView total_Dislike;
 
@@ -56,6 +57,10 @@ public class HJ_MushroomCheesesteak extends AppCompatActivity implements View.On
 
         like_button = (ImageButton) findViewById(R.id.like);
         dislike_button = (ImageButton) findViewById(R.id.dislike);
+
+        HJ = (TextView) findViewById(R.id.hjfoodtruck);
+
+        findViewById(R.id.hjfoodtruck).setOnClickListener(this);
 
         total_Like = (TextView) findViewById(R.id.totallike);
         total_Dislike = (TextView) findViewById(R.id.totaldislike);
@@ -129,6 +134,10 @@ public class HJ_MushroomCheesesteak extends AppCompatActivity implements View.On
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("HJ_MushroomCheesesteak_Like");
         final DatabaseReference myRef2 = database.getReference("HJ_MushroomCheesesteak_Dislike");
+
+        if (v==HJ) {
+            startActivity(new Intent(this, HJFoodTruck.class));
+        }
 
         if (v==like_button) {
             myRef.addListenerForSingleValueEvent(new ValueEventListener() {

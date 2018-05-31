@@ -64,4 +64,5 @@
     <string name="title_activity_vespa">Vespa</string>
     <string name="title_activity_sola_deli">SolaDeli</string>
     <string name="title_activity_street_fare">StreetFare</string>
+    <string name="title_activity_kami_korean">KamiKorean</string>
 </resources>

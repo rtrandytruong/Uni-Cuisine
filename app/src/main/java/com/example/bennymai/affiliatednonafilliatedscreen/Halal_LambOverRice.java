@@ -39,6 +39,7 @@ public class Halal_LambOverRice extends AppCompatActivity implements View.OnClic
     private ImageButton like_button;
     private ImageButton dislike_button;
 
+    TextView Halal;
     TextView total_Like;
     TextView total_Dislike;
 
@@ -56,6 +57,10 @@ public class Halal_LambOverRice extends AppCompatActivity implements View.OnClic
 
         like_button = (ImageButton) findViewById(R.id.like);
         dislike_button = (ImageButton) findViewById(R.id.dislike);
+
+        Halal = (TextView) findViewById(R.id.halalfood);
+
+        findViewById(R.id.halalfood).setOnClickListener(this);
 
         total_Like = (TextView) findViewById(R.id.totallike);
         total_Dislike = (TextView) findViewById(R.id.totaldislike);
@@ -129,6 +134,10 @@ public class Halal_LambOverRice extends AppCompatActivity implements View.OnClic
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("Halal_LambOverRice_Like");
         final DatabaseReference myRef2 = database.getReference("Halal_LambOverRice_Dislike");
+
+        if (v==Halal) {
+            startActivity(new Intent(this, HalalFoodTruck.class));
+        }
 
         if (v==like_button) {
             myRef.addListenerForSingleValueEvent(new ValueEventListener() {

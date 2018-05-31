@@ -1,5 +1,6 @@
 package com.example.bennymai.affiliatednonafilliatedscreen;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +22,14 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
 
         login.setOnClickListener(this);
         signup.setOnClickListener(this);
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed()
+    {
+
+        // super.onBackPressed(); // Comment this super call to avoid calling finish() or fragmentmanager's backstack pop operation.
     }
 
     @Override

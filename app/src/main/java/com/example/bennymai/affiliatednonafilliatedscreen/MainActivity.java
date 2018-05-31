@@ -1,5 +1,6 @@
 package com.example.bennymai.affiliatednonafilliatedscreen;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button eateries;
     private Button foodtruck;
     private Button randomfood;
+    private Button logout;
 
 
     @Override
@@ -35,10 +37,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         eateries = (Button) findViewById(R.id.eateries);
         foodtruck = (Button) findViewById(R.id.foodtruck);
         randomfood = (Button) findViewById(R.id.randomfood);
+        logout = (Button) findViewById(R.id.logout);
 
         eateries.setOnClickListener(this);
         foodtruck.setOnClickListener(this);
         randomfood.setOnClickListener(this);
+        logout.setOnClickListener(this);
+    }
+
+    @SuppressLint("MissingSuperCall")
+    @Override
+    public void onBackPressed()
+    {
+
+        // super.onBackPressed(); // Comment this super call to avoid calling finish() or fragmentmanager's backstack pop operation.
     }
 
     @Override
@@ -48,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == foodtruck) {
             startActivity(new Intent(this, FoodTrucks.class));
+        }
+        if (v == logout) {
+            startActivity(new Intent(this, Registration.class));
         }
         if (v == randomfood) {
             Random generator = new Random();

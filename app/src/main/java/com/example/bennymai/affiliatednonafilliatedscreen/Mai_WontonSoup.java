@@ -39,6 +39,7 @@ public class Mai_WontonSoup extends AppCompatActivity implements View.OnClickLis
     private ImageButton like_button;
     private ImageButton dislike_button;
 
+    TextView Mai;
     TextView total_Like;
     TextView total_Dislike;
 
@@ -56,6 +57,10 @@ public class Mai_WontonSoup extends AppCompatActivity implements View.OnClickLis
 
         like_button = (ImageButton) findViewById(R.id.like);
         dislike_button = (ImageButton) findViewById(R.id.dislike);
+
+        Mai = (TextView) findViewById(R.id.maifoodtruck);
+
+        findViewById(R.id.maifoodtruck).setOnClickListener(this);
 
         total_Like = (TextView) findViewById(R.id.totallike);
         total_Dislike = (TextView) findViewById(R.id.totaldislike);
@@ -129,6 +134,10 @@ public class Mai_WontonSoup extends AppCompatActivity implements View.OnClickLis
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("Mai_WontonSoup_Like");
         final DatabaseReference myRef2 = database.getReference("Mai_WontonSoup_Dislike");
+
+        if (v==Mai) {
+            startActivity(new Intent(this, MaiFoodTruck.class));
+        }
 
         if (v==like_button) {
             myRef.addListenerForSingleValueEvent(new ValueEventListener() {

@@ -19,7 +19,7 @@ public class FoodTruckList extends Fragment {
 
         View view = inflater.inflate(R.layout.activity_food_truck_list, container, false);
 
-        String[] breakfast = {"Halal Truck", "H&J Food Truck", "Mai's Oriental Food", "Kim's Dragon Asian Food", "Jimmy Truck"};
+        String[] breakfast = {"Halal Truck", "H&J Food Truck", "Mai's Oriental Food", "Kim's Dragon Asian Food", "Kim Korean"};
 
         ListView listView = (ListView) view.findViewById(R.id.foodtrucklist);
 
@@ -68,7 +68,7 @@ public class FoodTruckList extends Fragment {
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 4) {
-                    Intent myintent = new Intent(getContext(), JimmyFoodTruck.class);
+                    Intent myintent = new Intent(getContext(), KamiKorean.class);
                     startActivityForResult(myintent, 0);
                 }
 

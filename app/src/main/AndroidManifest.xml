@@ -180,7 +180,25 @@
         <activity android:name=".SD_CapresePanini" />
         <activity android:name=".SD_ChickenFetaSpinachPanini" />
         <activity android:name=".SD_BroccoliCheddarPanini" />
-        <activity android:name=".SD_BbqTurkeyCheddarPanini"></activity>
+        <activity android:name=".SD_BbqTurkeyCheddarPanini" />
+        <activity
+            android:name=".KamiKorean"
+            android:label="@string/title_activity_kami_korean"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".KamiMenu" />
+        <activity android:name=".Kami_Bibimbap" />
+        <activity android:name=".Kami_Bulgogi" />
+        <activity android:name=".Kami_KimichiBulgogiHoagie" />
+        <activity android:name=".Kami_KimchiFriedRiceWrap" />
+        <activity android:name=".Kami_SpicyChicken" />
+        <activity android:name=".Kami_Tteokbokki" />
+        <activity android:name=".Halal_ChapliKebabRice" />
+        <activity android:name=".Halal_ShishKebabRice" />
+        <activity android:name=".Halal_ChickenSalad" />
+        <activity android:name=".Halal_LambSalad" />
+        <activity android:name=".Halal_FalafelSalad" />
+        <activity android:name=".Halal_ChickenGyro" />
+        <activity android:name=".Halal_LambGyro"></activity>
     </application>
 
 </manifest>

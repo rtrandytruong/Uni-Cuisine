@@ -39,6 +39,7 @@ public class Kim_FriedDumplings extends AppCompatActivity implements View.OnClic
     private ImageButton like_button;
     private ImageButton dislike_button;
 
+    TextView Kim;
     TextView total_Like;
     TextView total_Dislike;
 
@@ -56,6 +57,10 @@ public class Kim_FriedDumplings extends AppCompatActivity implements View.OnClic
 
         like_button = (ImageButton) findViewById(R.id.like);
         dislike_button = (ImageButton) findViewById(R.id.dislike);
+
+        Kim = (TextView) findViewById(R.id.kimfoodtruck);
+
+        findViewById(R.id.kimfoodtruck).setOnClickListener(this);
 
         total_Like = (TextView) findViewById(R.id.totallike);
         total_Dislike = (TextView) findViewById(R.id.totaldislike);
@@ -129,6 +134,10 @@ public class Kim_FriedDumplings extends AppCompatActivity implements View.OnClic
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("Kim_FriedDumplings_Like");
         final DatabaseReference myRef2 = database.getReference("Kim_FriedDumplings_Dislike");
+
+        if (v==Kim) {
+            startActivity(new Intent(this, KimFoodTruck.class));
+        }
 
         if (v==like_button) {
             myRef.addListenerForSingleValueEvent(new ValueEventListener() {

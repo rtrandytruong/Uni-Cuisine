@@ -74,6 +74,35 @@ public class HalalMenu extends Fragment {
                     Intent myintent = new Intent(getContext(), Halal_FalafelRice.class);
                     startActivityForResult(myintent, 0);
                 }
+                if (position == 5) {
+                    Intent myintent = new Intent(getContext(), Halal_ChapliKebabRice.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 6) {
+                    Intent myintent = new Intent(getContext(), Halal_ShishKebabRice.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 7) {
+                    Intent myintent = new Intent(getContext(), Halal_ChickenSalad.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 8) {
+                    Intent myintent = new Intent(getContext(), Halal_LambSalad.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 9) {
+                    Intent myintent = new Intent(getContext(), Halal_FalafelSalad.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 10) {
+                    Intent myintent = new Intent(getContext(), Halal_ChickenGyro.class);
+                    startActivityForResult(myintent, 0);
+                }
+                if (position == 11) {
+                    Intent myintent = new Intent(getContext(), Halal_LambGyro.class);
+                    startActivityForResult(myintent, 0);
+                }
+
             }
         });
         return view;
