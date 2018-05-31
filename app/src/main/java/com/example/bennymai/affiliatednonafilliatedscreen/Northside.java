@@ -30,23 +30,23 @@ public class Northside extends Fragment {
 
         listView.setAdapter(listViewAdapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                if (position == 0) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
-                    startActivityForResult(myintent, 0);
-                }
-                if (position == 1) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
-                    startActivityForResult(myintent, 0);
-                }
-                if (position == 2) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
-                    startActivityForResult(myintent, 0);
-                }
-            }
-        });
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                if (position == 0) {
+//                    Intent myintent = new Intent(getContext(), MainActivity.class);
+//                    startActivityForResult(myintent, 0);
+//                }
+//                if (position == 1) {
+//                    Intent myintent = new Intent(getContext(), MainActivity.class);
+//                    startActivityForResult(myintent, 0);
+//                }
+//                if (position == 2) {
+//                    Intent myintent = new Intent(getContext(), MainActivity.class);
+//                    startActivityForResult(myintent, 0);
+//                }
+//            }
+//        });
 
         return view;
     }
