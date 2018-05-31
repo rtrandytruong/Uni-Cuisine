@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, Registration.class));
         }
         if (v == randomfood) {
+            startActivity(new Intent(this, RandomCategory.class));
+        }
+        /*if (v == randomfood) {
             Random generator = new Random();
             int number = generator.nextInt(32) + 1;
             // The '5' is the number of activities
@@ -170,11 +173,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case 32:
                     activity = Kami_Tteokbokki.class;
                     break;
-
             }
             // We use intents to start activities
             Intent intent = new Intent(getBaseContext(), activity);
             startActivity(intent);
-        }
+        }*/
     }
 }

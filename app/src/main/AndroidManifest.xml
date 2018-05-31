@@ -198,7 +198,9 @@
         <activity android:name=".Halal_LambSalad" />
         <activity android:name=".Halal_FalafelSalad" />
         <activity android:name=".Halal_ChickenGyro" />
-        <activity android:name=".Halal_LambGyro"></activity>
+        <activity android:name=".Halal_LambGyro" />
+        <activity android:name=".Random" />
+        <activity android:name=".RandomCategory"></activity>
     </application>
 
 </manifest>
