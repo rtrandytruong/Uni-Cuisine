@@ -18,6 +18,9 @@
     <string name="title_activity_chic_fil">ChicFilA</string>
     <string name="title_activity_downtown_grounds">DowntownGrounds</string>
 
+    <string name="BuildYourOwn">
+        <b>Broth:</b> Curry Chicken, Mushroom Miso, Smokey Shoyu\n<b>Veggie:</b> Crispy Onion, Baby Bok Choy, Corn, Spinach\n<b>Protein:</b> Chashu Pulled Pork, Crispy Chicken Katsu, Shoyu Shitake</string>
+
     <string name="WontonSoup">
         Small - $2.00\nLarge - $4.00</string>
     <string name="TofuVegetableSoup">
@@ -57,4 +60,8 @@
     <string name="title_activity_mai_food_truck">MaiFoodTruck</string>
     <string name="title_activity_jimmy_food_truck">JimmyFoodTruck</string>
     <string name="title_activity_kim_food_truck">KimFoodTruck</string>
+    <string name="title_activity_ignite">Ignite</string>
+    <string name="title_activity_vespa">Vespa</string>
+    <string name="title_activity_sola_deli">SolaDeli</string>
+    <string name="title_activity_street_fare">StreetFare</string>
 </resources>

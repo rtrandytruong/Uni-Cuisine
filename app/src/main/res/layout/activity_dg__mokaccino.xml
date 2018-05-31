@@ -75,6 +75,13 @@
                     android:layout_height="60dp"
                     android:background="@drawable/buttonstyle"
                     app:srcCompat="@drawable/dislike" />
+                <TextView
+                    android:id="@+id/totaldislike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:text="0" />
             </LinearLayout>
 
             <LinearLayout
@@ -90,6 +97,13 @@
                     android:layout_height="60dp"
                     android:background="@drawable/buttonstyle"
                     app:srcCompat="@drawable/like" />
+                <TextView
+                    android:id="@+id/totallike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="0" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -22,7 +22,7 @@ public class Urban extends Fragment {
 
         View view = inflater.inflate(R.layout.urban, container, false);
 
-        String[] urban = {"DOWNTOWN GROUNDS", "GREEN ST.", "IGNITE", "VESPA", "REV", "SoLA DELI", "STREET FARE"};
+        String[] urban = {"DOWNTOWN GROUNDS", "GREEN ST.", "IGNITE", "VESPA", "SoLA DELI", "STREET FARE"};
 
         ListView listView = (ListView) view.findViewById(R.id.urbanlist);
 
@@ -42,23 +42,19 @@ public class Urban extends Fragment {
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 2) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), Ignite.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 3) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), Vespa.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 4) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), SolaDeli.class);
                     startActivityForResult(myintent, 0);
                 }
                 if (position == 5) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
-                    startActivityForResult(myintent, 0);
-                }
-                if (position == 6) {
-                    Intent myintent = new Intent(getContext(), MainActivity.class);
+                    Intent myintent = new Intent(getContext(), StreetFare.class);
                     startActivityForResult(myintent, 0);
                 }
             }

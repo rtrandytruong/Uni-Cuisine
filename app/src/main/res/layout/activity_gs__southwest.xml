@@ -16,6 +16,7 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="197dp"
+            android:layout_marginTop="55dp"
             android:layout_gravity="center"
             android:src="@drawable/southwest" />
 
@@ -30,7 +31,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="353dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
@@ -83,6 +84,13 @@
                     android:layout_height="60dp"
                     android:background="@drawable/buttonstyle"
                     app:srcCompat="@drawable/dislike" />
+                <TextView
+                    android:id="@+id/totaldislike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:text="0" />
             </LinearLayout>
 
             <LinearLayout
@@ -98,6 +106,13 @@
                     android:layout_height="60dp"
                     android:background="@drawable/buttonstyle"
                     app:srcCompat="@drawable/like" />
+                <TextView
+                    android:id="@+id/totallike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="0" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

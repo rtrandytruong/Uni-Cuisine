@@ -67,7 +67,7 @@ public class ChooseEatery extends AppCompatActivity {
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -80,7 +80,7 @@ public class ChooseEatery extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     /**
      * A placeholder fragment containing a simple view.
@@ -136,9 +136,9 @@ public class ChooseEatery extends AppCompatActivity {
                 case 1:
                     Northside northside = new Northside();
                     return northside;
-                case 2:
+                /*case 2:
                     Hans hans = new Hans();
-                    return hans;
+                    return hans;*/
             }
             return null;
         }
@@ -146,7 +146,7 @@ public class ChooseEatery extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
     }
 }

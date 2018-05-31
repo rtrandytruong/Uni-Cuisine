@@ -138,7 +138,49 @@
         <activity android:name=".Kim_SesameChicken" />
         <activity android:name=".Kim_FriedDumplings" />
         <activity android:name=".Kim_FriedFishWithGarlicSauce" />
-        <activity android:name=".ResultScreen"></activity>
+        <activity android:name=".ResultScreen" />
+        <activity
+            android:name=".Ignite"
+            android:label="@string/title_activity_ignite"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".IGNITEMenu" />
+        <activity
+            android:name=".Vespa"
+            android:label="@string/title_activity_vespa"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".VESPAMenu" />
+        <activity
+            android:name=".SolaDeli"
+            android:label="@string/title_activity_sola_deli"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SDMenu" />
+        <activity
+            android:name=".StreetFare"
+            android:label="@string/title_activity_street_fare"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SFMenu" />
+        <activity android:name=".I_TriBlendCheeseburger" />
+        <activity android:name=".I_ClassicGrilledCheese" />
+        <activity android:name=".I_BaconTomatoGrilledCheese" />
+        <activity android:name=".I_CrispyCodSandwich" />
+        <activity android:name=".I_BBQChickenBaconSandwich" />
+        <activity android:name=".I_PhillyCheesesteak" />
+        <activity android:name=".I_PortobelloPhillySteak" />
+        <activity android:name=".I_ChickenTenders" />
+        <activity android:name=".I_MozzarellaSticks" />
+        <activity android:name=".I_CrinkleCutFries" />
+        <activity android:name=".V_BuffaloChickenPizza" />
+        <activity android:name=".V_CheeseburgerPizza" />
+        <activity android:name=".V_CaesarSideSalad" />
+        <activity android:name=".V_BaconChickenPesto" />
+        <activity android:name=".SF_BuildYourOwn" />
+        <activity android:name=".SD_TurkeyCilantroSlawCiabatta" />
+        <activity android:name=".SD_GrilledChickenBaconMelt" />
+        <activity android:name=".SD_CroqueMonsieurMelt" />
+        <activity android:name=".SD_CapresePanini" />
+        <activity android:name=".SD_ChickenFetaSpinachPanini" />
+        <activity android:name=".SD_BroccoliCheddarPanini" />
+        <activity android:name=".SD_BbqTurkeyCheddarPanini"></activity>
     </application>
 
 </manifest>

@@ -2,10 +2,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.bennymai.affiliatednonafilliatedscreen.DowntownGrounds">
-    <item
-        android:id="@+id/dgranking"
-        android:orderInCategory="100"
-        android:title="Profile"
-        android:icon="@drawable/ranking"
-        app:showAsAction="always" />
 </menu>
