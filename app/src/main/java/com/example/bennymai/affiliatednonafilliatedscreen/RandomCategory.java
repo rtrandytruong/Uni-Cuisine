@@ -49,34 +49,34 @@ public class RandomCategory extends AppCompatActivity implements View.OnClickLis
 
             // Here, we are checking to see what the output of the random was
             switch (number) {
-                case 0:
+                case 1:
                     activity = Mai_ChickenRiceSoup.class;
                     break;
-                case 1:
+                case 2:
                     activity = Mai_ChickenNoodleSoup.class;
                     break;
-                case 2:
+                case 3:
                     activity = Mai_TofuVegetableSoup.class;
                     break;
-                case 3:
+                case 4:
                     activity = Mai_WontonSoup.class;
                     break;
-                case 4:
+                case 5:
                     activity = Mai_EggRoll.class;
                     break;
-                case 5:
+                case 6:
                     activity = Kim_FriedFishWithGarlicSauce.class;
                     break;
-                case 6:
+                case 7:
                     activity = Kim_FriedDumplings.class;
                     break;
-                case 7:
+                case 8:
                     activity = Kim_SesameChicken.class;
                     break;
-                case 8:
+                case 9:
                     activity = Kim_PepperSteak.class;
                     break;
-                case 9:
+                case 10:
                     activity = Kim_GeneralTsosChicken.class;
                     break;
             }
@@ -93,37 +93,37 @@ public class RandomCategory extends AppCompatActivity implements View.OnClickLis
 
             // Here, we are checking to see what the output of the random was
             switch (number) {
-                case 0:
+                case 1:
                     activity = Halal_FishOverRice.class;
                     break;
-                case 1:
+                case 2:
                     activity = Halal_FalafelRice.class;
                     break;
-                case 2:
+                case 3:
                     activity = Halal_ComboOverRice.class;
                     break;
-                case 3:
+                case 4:
                     activity = Halal_LambOverRice.class;
                     break;
-                case 4:
+                case 5:
                     activity = Halal_ChickenOverRice.class;
                     break;
-                case 5:
+                case 6:
                     activity = Halal_FalafelSalad.class;
                     break;
-                case 6:
+                case 7:
                     activity = Halal_LambGyro.class;
                     break;
-                case 7:
+                case 8:
                     activity = Halal_LambSalad.class;
                     break;
-                case 8:
+                case 9:
                     activity = Halal_ShishKebabRice.class;
                     break;
-                case 9:
+                case 10:
                     activity = Halal_ChapliKebabRice.class;
                     break;
-                case 10:
+                case 11:
                     activity = Halal_ChickenGyro.class;
                     break;
             }
