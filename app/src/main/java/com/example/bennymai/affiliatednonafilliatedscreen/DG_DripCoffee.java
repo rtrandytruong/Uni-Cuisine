@@ -32,11 +32,6 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 961fd2a96082fca936000dc3513cb61425bd7b48
 public class DG_DripCoffee extends AppCompatActivity implements View.OnClickListener {
     Dialog myDialog;
     private ImageButton like_button;
@@ -48,11 +43,6 @@ public class DG_DripCoffee extends AppCompatActivity implements View.OnClickList
     public static int likes;
     public static int dislikes = 0;
     private static final String TAG = "Testing: ";
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 961fd2a96082fca936000dc3513cb61425bd7b48
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,7 +119,6 @@ public class DG_DripCoffee extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
 
 
-<<<<<<< HEAD
 
         Context context = this;
         //T Code IMPORTANT FOR FIREBASE
@@ -203,92 +192,6 @@ public class DG_DripCoffee extends AppCompatActivity implements View.OnClickList
             myRef2.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-=======
-    String temp_string = "";
-    @Override
-    public void onClick(View view) {
-
-        Context context = this;
-        //T Code IMPORTANT FOR FIREBASE
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference myRef = database.getReference("coffee_like_counter");
-
-        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String post = dataSnapshot.getValue(String.class);
-                Log.v(TAG, post); // log dont need this
-
-                int like_num = Integer.parseInt(post); //converting
-                likes = like_num + 1;
-                temp_string = String.valueOf(likes);
-                total_Like.setText(String.valueOf(likes));
-                myRef.setValue(temp_string);
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-
-        });
-
-
-
-        // T CODE ENDS
-
-//        if (view == like_button) {
-//
-//            //      writeToFile(String.valueOf(likes));
-//            /*startActivity(new Intent(this, ResultScreen.class));*/
-//
-//            if (likes == 0 && dislikes != 1) {
-//                likes += 1;
-//               // myRef.setValue("0");
-//                total_Like.setText(String.valueOf(likes));
-//            } else if (likes == 1) {
-//                likes = 0;
-//                total_Like.setText(String.valueOf(likes));
-//            }
-//        }
-//        else if (view == dislike_button) {
-//
-//            //      writeToFile(String.valueOf(dislikes));
-//            /*startActivity(new Intent (this, ResultScreen.class));*/
-//
-//            if (dislikes == 0 && likes != 1) {
-//                dislikes += 1;
-//                total_Dislike.setText(String.valueOf(dislikes));
-//            } else if (dislikes == 1) {
-//                dislikes = 0;
-//                total_Dislike.setText(String.valueOf(dislikes));
-//            }
-//        }
-    }
-
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference("coffee_like_counter");
-
-
-/*
-    public void writeToFile(String data)
-    {
-        // Get the directory for the user's public pictures directory.
-        final File path =
-                Environment.getExternalStoragePublicDirectory
-                        (
-                                //Environment.DIRECTORY_PICTURES
-                                Environment.DIRECTORY_DCIM + "/Users/bennymai/Desktop/"
-                        );
-
-        // Make sure the path directory exists.
-        if(!path.exists())
-        {
-            // Make it, if it doesn't exit
-            path.mkdirs();
-        }
->>>>>>> 961fd2a96082fca936000dc3513cb61425bd7b48
 
                     // first time dislike
                     if ((checker_d == "usable")) {
