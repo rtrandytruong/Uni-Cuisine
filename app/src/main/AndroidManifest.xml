@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bennymai.affiliatednonafilliatedscreen">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EateriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseEatery"
+            android:label="@string/title_activity_choose_eatery"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseCampus"
+            android:label="@string/title_activity_choose_campus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DowntownGrounds"
+            android:label="@string/title_activity_downtown_grounds"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DG_DripCoffee"
+            android:screenOrientation="portrait" />
+        <activity android:name=".test" />
+        <activity android:name=".DG_Expresso" />
+        <activity android:name=".DG_Cappuccino" />
+        <activity android:name=".DG_Mokaccino" />
+        <activity android:name=".DG_Latte" />
+        <activity android:name=".DG_Americano" />
+        <activity android:name=".DG_HotChocolate" />
+        <activity android:name=".DG_SumatraIcedTea" />
+        <activity android:name=".DG_IcedTea" />
+        <activity android:name=".DG_HotTazoTea" />
+        <activity android:name=".DG_Bagel" />
+        <activity android:name=".DG_BagelwithSpread" />
+        <activity android:name=".DG_LoxBagel" />
+        <activity android:name=".DG_Muffin" />
+        <activity android:name=".DG_Scone" />
+        <activity android:name=".DG_CoffeeRoll" />
+        <activity android:name=".DG_Danish" />
+        <activity android:name=".DG_Brownie" />
+        <activity android:name=".DG_PoundCake" />
+        <activity android:name=".DG_Croissant" />
+        <activity
+            android:name=".GreenSt"
+            android:label="@string/title_activity_green_st"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".GSMenu" />
+        <activity android:name=".GS_Vietnamese" />
+        <activity android:name=".GS_Southwest" />
+        <activity android:name=".GS_Mediterranean" />
+        <activity
+            android:name=".FoodTrucks"
+            android:label="@string/title_activity_food_trucks"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".FoodTruckList" />
+        <activity
+            android:name=".HJFoodTruck"
+            android:label="@string/title_activity_hjfood_truck"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HJMenu"
+            android:label="@string/title_activity_hjmenu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HalalFoodTruck"
+            android:label="@string/title_activity_halal_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".HalalMenu" />
+        <activity
+            android:name=".MaiFoodTruck"
+            android:label="@string/title_activity_mai_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".JimmyFoodTruck"
+            android:label="@string/title_activity_jimmy_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".JimmyMenu" />
+        <activity
+            android:name=".KimFoodTruck"
+            android:label="@string/title_activity_kim_food_truck"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Halal_ChickenOverRice" />
+        <activity android:name=".Halal_Lamboverrice" />
+        <activity android:name=".Halal_Combooverrice" />
+        <activity android:name=".Halal_LambOverRice" />
+        <activity android:name=".Halal_ComboOverRice" />
+        <activity android:name=".Halal_FishOverRice" />
+        <activity android:name=".Halal_FalafelRice" />
+        <activity android:name=".HJ_PhillyCheesesteak" />
+        <activity android:name=".HJ_PhillyChickenCheesesteak" />
+        <activity android:name=".HJ_BbqCheesesteak" />
+        <activity android:name=".HJ_MushroomCheesesteak" />
+        <activity android:name=".HJ_PepperCheesesteak" />
+        <activity android:name=".Mai_EggRoll" />
+        <activity android:name=".Mai_WontonSoup" />
+        <activity android:name=".Mai_TofuVegetableSoup" />
+        <activity android:name=".Mai_ChickenNoodleSoup" />
+        <activity android:name=".Mai_ChickenRiceSoup" />
+        <activity android:name=".Kim_GeneralTsosChicken" />
+        <activity android:name=".Kim_PepperSteak" />
+        <activity android:name=".Kim_SesameChicken" />
+        <activity android:name=".Kim_FriedDumplings" />
+        <activity android:name=".Kim_FriedFishWithGarlicSauce" />
+        <activity android:name=".ResultScreen" />
+        <activity
+            android:name=".Ignite"
+            android:label="@string/title_activity_ignite"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".IGNITEMenu" />
+        <activity
+            android:name=".Vespa"
+            android:label="@string/title_activity_vespa"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".VESPAMenu" />
+        <activity
+            android:name=".SolaDeli"
+            android:label="@string/title_activity_sola_deli"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SDMenu" />
+        <activity
+            android:name=".StreetFare"
+            android:label="@string/title_activity_street_fare"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SFMenu" />
+        <activity android:name=".I_TriBlendCheeseburger" />
+        <activity android:name=".I_ClassicGrilledCheese" />
+        <activity android:name=".I_BaconTomatoGrilledCheese" />
+        <activity android:name=".I_CrispyCodSandwich" />
+        <activity android:name=".I_BBQChickenBaconSandwich" />
+        <activity android:name=".I_PhillyCheesesteak" />
+        <activity android:name=".I_PortobelloPhillySteak" />
+        <activity android:name=".I_ChickenTenders" />
+        <activity android:name=".I_MozzarellaSticks" />
+        <activity android:name=".I_CrinkleCutFries" />
+        <activity android:name=".V_BuffaloChickenPizza" />
+        <activity android:name=".V_CheeseburgerPizza" />
+        <activity android:name=".V_CaesarSideSalad" />
+        <activity android:name=".V_BaconChickenPesto" />
+        <activity android:name=".SF_BuildYourOwn" />
+        <activity android:name=".SD_TurkeyCilantroSlawCiabatta" />
+        <activity android:name=".SD_GrilledChickenBaconMelt" />
+        <activity android:name=".SD_CroqueMonsieurMelt" />
+        <activity android:name=".SD_CapresePanini" />
+        <activity android:name=".SD_ChickenFetaSpinachPanini" />
+        <activity android:name=".SD_BroccoliCheddarPanini" />
+        <activity android:name=".SD_BbqTurkeyCheddarPanini" />
+        <activity
+            android:name=".KamiKorean"
+            android:label="@string/title_activity_kami_korean"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".KamiMenu" />
+        <activity android:name=".Kami_Bibimbap" />
+        <activity android:name=".Kami_Bulgogi" />
+        <activity android:name=".Kami_KimichiBulgogiHoagie" />
+        <activity android:name=".Kami_KimchiFriedRiceWrap" />
+        <activity android:name=".Kami_SpicyChicken" />
+        <activity android:name=".Kami_Tteokbokki" />
+        <activity android:name=".Halal_ChapliKebabRice" />
+        <activity android:name=".Halal_ShishKebabRice" />
+        <activity android:name=".Halal_ChickenSalad" />
+        <activity android:name=".Halal_LambSalad" />
+        <activity android:name=".Halal_FalafelSalad" />
+        <activity android:name=".Halal_ChickenGyro" />
+        <activity android:name=".Halal_LambGyro" />
+        <activity android:name=".Random" />
+        <activity android:name=".RandomCategory"></activity>
+    </application>
+
+</manifest>
